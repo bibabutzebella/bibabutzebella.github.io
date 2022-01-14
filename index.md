@@ -1,3 +1,3 @@
- ![ Alt text](fun. gif)
+ ![ Alt text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
 
 bellas erste website
