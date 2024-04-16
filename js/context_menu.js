@@ -17,15 +17,16 @@ function openContextMenu(menuText, linkUrl, additionalText) {
         popup.appendChild(link);
     }
 
-    // Füge weiteren Text hinzu, falls vorhanden
+    // Füge zusätzlichen Text hinzu, falls vorhanden
     if (additionalText) {
-        var additionalTextElement = document.createElement('div');
-        additionalTextElement.textContent = additionalText;
-        additionalTextElement.className = 'popup-additional-text';
-        popup.appendChild(additionalTextElement);
+        var additionalTextContainer = document.createElement('div'); // Neuer Container für zusätzlichen Text
+        additionalTextContainer.className = 'popup-additional-text-container'; // Klasse für den Container
+        var additionalTextElement = document.createElement('div'); // Neues Element für den zusätzlichen Text
+        additionalTextElement.innerHTML = additionalText; // Verwende innerHTML statt textContent
+        additionalTextElement.className = 'popup-additional-text'; // Klasse für den zusätzlichen Text
+        additionalTextContainer.appendChild(additionalTextElement); // Füge den zusätzlichen Text dem Container hinzu
+        popup.appendChild(additionalTextContainer); // Füge den Container dem Popup-Fenster hinzu
     }
-
-
 
 
     // Close-Button hinzufügen

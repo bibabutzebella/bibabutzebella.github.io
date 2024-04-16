@@ -5,9 +5,9 @@ html {
 
 body {
     font-family: Trebuchet MS, sans-serif;
-    height: 100%; /* Setze Höhe auf 100% des Viewports */
-    margin: 0; /* Entferne den Standardrand des Body-Elements */
-    padding: 0; /* Entferne das Standardpadding des Body-Elements */
+    height: 100%;     /* Setze Höhe auf 100% des Viewports */
+    margin: 0;     /* Entferne den Standardrand des Body-Elements */
+    padding: 0;     /* Entferne das Standardpadding des Body-Elements */
 }
 
 
@@ -15,12 +15,12 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%; /* Breite auf 100% des Bildschirms setzen */
-    height: 100%; /* Höhe auf 100% des Bildschirms setzen */
+    width: 100%;    /* Breite auf 100% des Bildschirms setzen */
+    height: 100%;     /* Höhe auf 100% des Bildschirms setzen */
     background-image: url('../images/Bella_transparent20.png');
-    background-repeat: no-repeat; /* Bild nicht wiederholen */
-    background-size: cover; /* Bildgröße anpassen, um den gesamten Bildschirm abzudecken */
-    background-position: center; /* Bild zentrieren */
+    background-repeat: no-repeat;    /* Bild nicht wiederholen */
+    background-size: cover;     /* Bildgröße anpassen, um den gesamten Bildschirm abzudecken */
+    background-position: center;    /* Bild zentrieren */
 }
 
 
@@ -29,10 +29,10 @@ body {
     color: #afd0f1;
     height: 50px;
     width: 100%;
-    display: flex; /* Flexbox verwenden, um den Inhalt zu zentrieren */
-    justify-content: center; /* Horizontal zentrieren */
-    align-items: center; /* Vertikal zentrieren */
-    font-size: 30px; /* Vergrößere die Schriftgröße */
+    display: flex;    /* Flexbox verwenden, um den Inhalt zu zentrieren */
+    justify-content: center;     /* Horizontal zentrieren */
+    align-items: center;    /* Vertikal zentrieren */
+    font-size: 30px;    /* Vergrößere die Schriftgröße */
 }
 
 .popup {
@@ -44,56 +44,54 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    padding: 40px; /* Füge etwas Innenabstand hinzu */
-    text-align: center; /* Zentriere den Text horizontal */
-    display: flex; /* Verwende Flexbox für die Ausrichtung */
-    flex-direction: column; /* Staple Elemente vertikal */
-    align-items: center; /* Zentriere Link horizontal */
+    padding: 40px;     /* Füge etwas Innenabstand hinzu */
+    text-align: center;     /* Zentriere den Text horizontal */
+    display: flex;     /* Verwende Flexbox für die Ausrichtung */
+    flex-direction: column;     /* Staple Elemente vertikal */
+    align-items: center;     /* Zentriere Link horizontal */
 }
 
 .popup-menu-text {
-    font-size: 34px; /* Ändere die Schriftgröße des Menütexts */
-    font-weight: bold; /* Mache den Menütext fett */
-    text-transform: uppercase; /* Wandle den Menütext in Kapitälchen um */
+    font-size: 38px;     /* Ändere die Schriftgröße des Menütexts */
+    font-weight: bold;     /* Mache den Menütext fett */
+    text-transform: uppercase;     /* Wandle den Menütext in Kapitälchen um */
 }
 
 .popup-link-text {
-    margin-top: 20px; /* Erhöhe den Abstand zwischen Menütext und Linktext */
-    font-size: 22px; /* Ändere die Schriftgröße des Linktexts */
+    margin-top: 22px;     /* Erhöhe den Abstand zwischen Menütext und Linktext */
+    font-size: 22px;     /* Ändere die Schriftgröße des Linktexts */
     color: #ffcf4d
-    /* Weitere Stile für den Linktext nach Bedarf */
+
 }
 
 .popup-additional-text {
-    margin-top: 15px; /* Beispiel für den Abstand zwischen Link und zusätzlichem Text */
-    font-size: 14px; /* Beispiel für die Schriftgröße des zusätzlichen Textes */
-    color: #333; /* Beispiel für die Farbe des zusätzlichen Textes */
-    /* Weitere Stile nach Bedarf */
+    margin-top: 25px;    /* Beispiel für den Abstand zwischen Link und zusätzlichem Text */
+    font-size: 16px;    /* Beispiel für die Schriftgröße des zusätzlichen Textes */
 }
 
 .popup-close-button {
-    position: absolute; /* Ändere die Positionierung auf absolut */
-    top: 10px; /* Positioniere den Button 10px von oben entfernt */
-    right: 10px; /* Positioniere den Button 10px von rechts entfernt */
-    font-size: 18px; /* Ändere die Schriftgröße des Buttons */
-    background-color: transparent; /* Mache den Hintergrund transparent */
-    border: none; /* Entferne die Rahmen */
-    cursor: pointer; /* Zeige einen Zeiger beim Überfahren */
+    position: absolute;     /* Ändere die Positionierung auf absolut */
+    top: 10px;    /* Positioniere den Button 10px von oben entfernt */
+    right: 10px;     /* Positioniere den Button 10px von rechts entfernt */
+    font-size: 18px;    /* Ändere die Schriftgröße des Buttons */
+    background-color: transparent;     /* Mache den Hintergrund transparent */
+    border: none;     /* Entferne die Rahmen */
+    cursor: pointer;    /* Zeige einen Zeiger beim Überfahren */
 }
 
 
 .popup a {
-    display: block; /* Mache den Link zu einem Blockelement */
-    margin-top: 80px; /* Füge etwas Abstand über dem Link hinzu */
+    display: block;    /* Mache den Link zu einem Blockelement */
+    margin-top: 80px;     /* Füge etwas Abstand über dem Link hinzu */
 }
 
 
 .keyboard {
     position: absolute;
-    top: 350px; /* Oben auf der Seite */
-    left: 120px; /* Links auf der Seite */
-    cursor: pointer; /* Zeige Handcursor beim Überfahren */
-    transform: scale(0.85); /* Reduziere die Größe um 75% */
+    top: 350px;     /* Oben auf der Seite */
+    left: 120px;    /* Links auf der Seite */
+    cursor: pointer;    /* Zeige Handcursor beim Überfahren */
+    transform: scale(0.85);     /* Reduziere die Größe um 75% */
 }
 
 
