@@ -1,0 +1,40 @@
+/*Layout Website*/
+
+
+body {
+    /*background-color: #e1d3c1;*/
+    font-family: Trebuchet MS, sans-serif;
+
+    background-image: url('file:///D:/2_PROJECTS/Websites/birthday_website/images/IMG-20201007-WA0006_transparent20.png');
+    background-repeat: no-repeat; /* Bild nicht wiederholen */
+    background-size: cover; /* Bildgröße anpassen, um den gesamten Bildschirm abzudecken */
+    background-position: center; /* Bild zentrieren */
+}
+
+
+#titlebar {
+    background-color: #95aacb;
+    color: #3a5486;
+    height: 50px;
+    width: 100%;
+    display: flex; /* Flexbox verwenden, um den Inhalt zu zentrieren */
+    justify-content: center; /* Horizontal zentrieren */
+    align-items: center; /* Vertikal zentrieren */
+    font-size: 30px; /* Vergrößere die Schriftgröße */
+}
+
+
+
+h1 {
+    color: #3a5486;
+}
+
+
+h2 {
+    color: #5a72a1;
+}
+
+
+h3 {
+    color: #8194b8;
+}
