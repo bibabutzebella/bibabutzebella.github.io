@@ -17,6 +17,17 @@ function openContextMenu(menuText, linkUrl) {
         popup.appendChild(link);
     }
 
+    // Füge weiteren Text hinzu, falls vorhanden
+    if (additionalText) {
+        var additionalTextElement = document.createElement('div');
+        additionalTextElement.textContent = additionalText;
+        additionalTextElement.className = 'popup-additional-text';
+        popup.appendChild(additionalTextElement);
+    }
+
+
+
+
     // Close-Button hinzufügen
     var closeButton = document.createElement('button');
     closeButton.textContent = 'X';
