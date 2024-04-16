@@ -1,4 +1,4 @@
-function openContextMenu(menuText, linkUrl) {
+function openContextMenu(menuText, linkUrl, additionalText) {
     var popup = document.createElement('div');
     popup.className = 'popup';
 

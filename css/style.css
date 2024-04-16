@@ -64,6 +64,13 @@ body {
     /* Weitere Stile für den Linktext nach Bedarf */
 }
 
+.popup-additional-text {
+    margin-top: 15px; /* Beispiel für den Abstand zwischen Link und zusätzlichem Text */
+    font-size: 14px; /* Beispiel für die Schriftgröße des zusätzlichen Textes */
+    color: #333; /* Beispiel für die Farbe des zusätzlichen Textes */
+    /* Weitere Stile nach Bedarf */
+}
+
 .popup-close-button {
     position: absolute; /* Ändere die Positionierung auf absolut */
     top: 10px; /* Positioniere den Button 10px von oben entfernt */
@@ -86,7 +93,7 @@ body {
     top: 350px; /* Oben auf der Seite */
     left: 120px; /* Links auf der Seite */
     cursor: pointer; /* Zeige Handcursor beim Überfahren */
-    transform: scale(0.75); /* Reduziere die Größe um 75% */
+    transform: scale(0.85); /* Reduziere die Größe um 75% */
 }
 
 
