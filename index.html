@@ -2,31 +2,41 @@
 <html lang="en" dir="ltr">
 
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Website Manual</title>
-
     <link rel="stylesheet" href="css/style.css">
   </head>
 
 
   <body>
-    <!-- Kommentar -->
+    <!-- transparentes Hintergrundbild -->
     <div id="background"></div>
 
-    <div id="titlebar">Geburtstagswünsche</div>
+    <div id="titlebar">Wish Hub</div>
 
-    <!-- Anklickbares Bild -->
+    <!-- TASTATUR -->
     <div id="keyboard" class="keyboard" onclick="openContextMenu('Tastatur',
     'https://www.logitech.com/de-de/products/keyboards/mx-mechanical.html',
     'Sprache: Deutsch <br> Stil: Linear')">
         <img src="images/tastatur.png" alt="Bildbeschreibung">
     </div>
 
+    <!--ARDUINO-->
     <div id="arduino" class="arduino" onclick="openContextMenu('Arduino',
     'https://store.arduino.cc/products/arduino-starter-kit-multi-language?variant=35642516308119',
     'Starter-Kit')">
         <img src="images/arduino.png" alt="Bildbeschreibung">
     </div>
+
+    <!--CAP-->
+    <div id="v-cap" class="v-cap" onclick="openContextMenu('Cap',
+    'https://liebelei.co/made-in-vagina-made-in-v-cap',
+    'Starter-Kit')">
+        <img src="images/v-cap.png" alt="Bildbeschreibung">
+    </div>
+
+
+
 
     <!-- JavaScript, um das Pop-up-Menü zu öffnen -->
     <script src="js/context_menu.js"></script>

@@ -91,7 +91,7 @@ body {
     top: 350px;     /* Oben auf der Seite */
     left: 120px;    /* Links auf der Seite */
     cursor: pointer;    /* Zeige Handcursor beim Überfahren */
-    transform: scale(0.85);     /* Reduziere die Größe um 75% */
+    transform: scale(0.75);     /* Reduziere die Größe um 75% */
 }
 
 
@@ -100,5 +100,13 @@ body {
     top: 80px;
     left: 40px;
     cursor: pointer;
-    transform: scale(0.65);
+    transform: scale(0.45);
+}
+
+.v-cap {
+    position: absolute;
+    top: 450px;
+    left: 100px;
+    cursor: pointer;
+    transform: scale(0.45);
 }
