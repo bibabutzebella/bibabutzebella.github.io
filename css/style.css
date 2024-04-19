@@ -88,25 +88,33 @@ body {
 
 .keyboard {
     position: absolute;
-    top: 350px;     /* Oben auf der Seite */
-    left: 120px;    /* Links auf der Seite */
+    top: 70px;  /*Abstand von Oben in Pixel */
+    left: 310px;  /* Abstand von der linken Seite in Pixel */
     cursor: pointer;    /* Zeige Handcursor beim Überfahren */
-    transform: scale(0.75);     /* Reduziere die Größe um 75% */
+    transform: scale(0.80);     /* Reduziere die Größe um 75% */
 }
 
 
 .arduino {
     position: absolute;
-    top: 80px;
-    left: 40px;
+    top: 100px;
+    left: 10px;
     cursor: pointer;
     transform: scale(0.45);
 }
 
 .v-cap {
     position: absolute;
-    top: 450px;
-    left: 100px;
+    top: 280px;
+    left: 150px;
     cursor: pointer;
     transform: scale(0.45);
+}
+
+.cover {
+    position: absolute;
+    top: 350px;
+    left: 0;
+    cursor: pointer;
+    transform: scale(0.35);
 }
