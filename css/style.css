@@ -106,7 +106,7 @@ body {
     top: 50px;
     left: 10px;
     cursor: pointer;
-    transform: scale(0.45);
+    transform: scale(0.55);
 }
 
 .v-cap {
@@ -119,16 +119,16 @@ body {
 
 .crocs {
     position: absolute;
-    top: 60px;
-    left: 220px;
+    top: 0px;
+    left: 150px;
     cursor: pointer;
-    transform: scale(0.35);
+    transform: scale(0.25);
 }
 
 .jibbitz {
     position: absolute;
     top: 200px;
-    left: 80px;
+    left: 100px;
     cursor: pointer;
-    transform: scale(0.35);
+    transform: scale(0.5);
 }
