@@ -8,6 +8,7 @@ function openContextMenu(menuText, linkData, additionalText) {
     menuTextElement.className = 'popup-menu-text';
     popup.appendChild(menuTextElement);
 
+    
 // Füge Links zum Popup-Fenster hinzu, falls vorhanden
 if (linkData) {
     if (Array.isArray(linkData)) {
@@ -25,7 +26,7 @@ if (linkData) {
             if (multipleLinks && index > 0) {
                 link.style.marginTop = '10px'; // Ändere den vertikalen Abstand für alle Links außer dem ersten
             }
-
+            link.target = "_blank"; // Öffne den Link in einem neuen Tab >>> FUNKTIONIERT NICHT!
             popup.appendChild(link);
         });
     } else {
