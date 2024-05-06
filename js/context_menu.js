@@ -1,4 +1,4 @@
-function openContextMenu(menuText, linkUrl, additionalText) {
+function openContextMenu(menuText, linkData, additionalText) {
     var popup = document.createElement('div');
     popup.className = 'popup';
 
@@ -8,14 +8,35 @@ function openContextMenu(menuText, linkUrl, additionalText) {
     menuTextElement.className = 'popup-menu-text';
     popup.appendChild(menuTextElement);
 
-    // Füge Link zum Popup-Fenster hinzu, falls vorhanden
-    if (linkUrl) {
+// Füge Links zum Popup-Fenster hinzu, falls vorhanden
+if (linkData) {
+    if (Array.isArray(linkData)) {
+        // Überprüfe, ob mehrere Links vorhanden sind und passe die Schriftgröße an
+        var multipleLinks = linkData.length > 1;
+
+        // Wenn linkData ein Array ist, füge jeden Link hinzu
+        linkData.forEach(function(linkItem, index) {
+            var link = document.createElement('a');
+            link.textContent = linkItem.text || (multipleLinks ? 'Hier gibt\'s mich' : ''); // Ändere den Text, wenn mehrere Links vorhanden sind
+            link.href = linkItem.url;
+            link.className = 'popup-link-text' + (multipleLinks ? ' smaller' : ''); // Füge eine zusätzliche Klasse hinzu, wenn mehrere Links vorhanden sind
+
+            // Passe den vertikalen Zeilenabstand für den Text an, wenn mehrere Links vorhanden sind
+            if (multipleLinks && index > 0) {
+                link.style.marginTop = '10px'; // Ändere den vertikalen Abstand für alle Links außer dem ersten
+            }
+
+            popup.appendChild(link);
+        });
+    } else {
+        // Wenn linkData ein einzelner Link ist, füge ihn hinzu
         var link = document.createElement('a');
         link.textContent = 'Hier gibt\'s mich';
-        link.href = linkUrl;
+        link.href = linkData;
         link.className = 'popup-link-text';
         popup.appendChild(link);
     }
+}
 
     // Füge zusätzlichen Text hinzu, falls vorhanden
     if (additionalText) {
